@@ -1,0 +1,22 @@
+name = input("Hola, como te llamas?\n")
+
+if name == "Moko":
+    print("No soy un moco!!!")
+    exit()
+else:
+    menu = "caffe, cigarros i pija"
+
+    elecion = input("Usted esta en tabaccos, tenemos " + menu + ", que necesiata?\n")
+
+    if elecion == "caffe":
+        price = 3
+    elif elecion == "cigarros":
+        price = 5
+    elif elecion == "pija":
+        price = 1
+
+    cantidad = input("Gran elecion, ahora digame la cantidad de su producto deseado\n")
+
+    total = price * int(cantidad) 
+
+    print("Su total es de" + str(total))

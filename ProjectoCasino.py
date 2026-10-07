@@ -36,9 +36,9 @@ if name == "Boris":
             if intento == "piti" or elecion == "peta" or elecion == "cafe":
         
               cantidad = input("Vale, ahora si, cuanto quisiera de " + elecion + "?\n")
-        
+
               precio = 3
-                    
+                     
               total = precio * int(cantidad)
                     
               print("Su total es de " + str(total) + ", que la pase chill")
@@ -71,7 +71,7 @@ else:#si no es Boris
         intento = input("No tenemos de eso, te lo vuelo a repetir, tenemos " + menu + ", que va a eleguir?\n")
         
         #si eligue bien por 2 vez
-        if intento == "piti" or elecion == "peta" or elecion == "cafe":
+        if intento == "piti" or intento == "peta" or intento == "cafe":
 
             cantidad = input("Vale, ahora si, cuanto quisiera de " + elecion + "?\n")
 
