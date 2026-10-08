@@ -1,22 +1,13 @@
-name = input("Hola, como te llamas?\n")
+name = input("Hola amego, como ti lama?\n")
 
-if name == "Moko":
-    print("No soy un moco!!!")
-    exit()
+if name == "Pedrito" or name == "pedrito":
+    presi = input("Zanche?\n")
+    votos = int(input("Cuanto votos tu roba aier\n"))
+    if presi == "Si" or presi == "si" and votos >= 5:
+        print("Amego fora di mi kibaba o sino jo pigar")
+        exit()
+    else:
+        print("Bienvenido a mi kibaba amego, ki kere?")
+
 else:
-    menu = "caffe, cigarros i pija"
-
-    elecion = input("Usted esta en tabaccos, tenemos " + menu + ", que necesiata?\n")
-
-    if elecion == "caffe":
-        price = 3
-    elif elecion == "cigarros":
-        price = 5
-    elif elecion == "pija":
-        price = 1
-
-    cantidad = input("Gran elecion, ahora digame la cantidad de su producto deseado\n")
-
-    total = price * int(cantidad) 
-
-    print("Su total es de" + str(total))
+    print("Bienvenido a mi kibaba amego, ki kere?") 
