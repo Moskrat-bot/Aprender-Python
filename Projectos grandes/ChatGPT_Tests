@@ -1,0 +1,14 @@
+def operacion(a, b, operador):
+    if operador == "+":
+       return a + b
+    elif operador == "-":
+        return a - b
+    elif operador == "*":
+        return a * b
+    elif operador == "/":
+        return a / b
+    else:
+        print("No se puede utilizar este operador")
+
+resultado = operacion(49, 58, "+")
+print(resultado)

@@ -1,0 +1,59 @@
+chat_bot: str = "CalcRat"
+
+print(f"Hi, im {chat_bot}, at the moment i can only do simple math, to enter pres R, to quit press T")
+
+while True:
+    user_input: str = input("You: ").upper()
+
+    if user_input == "R":
+        print("Alright, lets do some maths, enter one of these simbols: +, -, *, /")
+        user_input: str = input("You: ").upper()
+
+        if user_input == "+":
+            print("Sure, lets do some adition, please enter you 2 numbers")
+            try:
+                num1: int = int(input("First number: "))
+                num2: int = int(input("Second number: "))
+                print(f"The result of {num1} and {num2} is:\n{num1 + num2}")
+            except ValueError:
+                print("Soryy, i cant do that at the moment, my creator is new and im programed to basic maths")
+
+        elif user_input == "-":
+            print("Sure, lets do some subtraction, please enter you 2 numbers")
+
+            try:
+                num1: int = int(input("First number: "))
+                num2: int = int(input("Second number: "))
+                print(f"The result of {num1} and {num2} is:\n{num1 - num2}")
+            except ValueError:
+                print("Soryy, i cant do that at the moment, my creator is new and im programed to basic maths")
+
+        elif user_input == "*":
+            print("Sure, lets do some multiplication, please enter you 2 numbers")
+
+            try:
+                num1: int = int(input("First number: "))
+                num2: int = int(input("Second number: "))
+                print(f"The result of {num1} and {num2} is:\n{num1 * num2}")
+            except ValueError:
+                print("Soryy, i cant do that at the moment, my creator is new and im programed to basic maths")
+
+        elif user_input == "/":
+            print("Sure, lets do some division, please enter you 2 numbers")
+
+            try:
+                num1: int = int(input("First number: "))
+                num2: int = int(input("Second number: "))
+                print(f"The result of {num1} and {num2} is:\n{num1 / num2}")
+            except ValueError:
+                print("Sorry, i dont understand that at the moment, pleas insert basic maths stuff")
+
+        else:
+            print("At the moment i only know: +, -, *, /\n So lets star right over: to start over pres R, to quit press T")
+
+    elif user_input == "T":
+        print("You quit the program, goodbye")
+        exit()
+
+    else:
+        print("Sorry, i cant do that at the moment, try again: to try again pres R, to quit press T")
