@@ -1,0 +1,31 @@
+selection_user = input("\n---Moskos Caffe---\n\nPara pedir en la tienda pulse E, para salir pulse S: ").upper()
+
+menu_drink ={"CAFFE": 2.49,
+        "ZUMO DE NARANJA": 2.99,
+        "CERVEZA": 3.49,}
+
+menu_food = {"CROISSANT": 2.99,
+        "PAN CON TOMATE": 2.99,
+        "BOCATA BACON QUESO": 4.99,
+        "BOCATA LOMO": 4.99}
+
+if selection_user == "E":
+        print("\n---Menu---\n")
+
+        print(f"De bebida tenemos\n{", ".join(menu_drink.keys())}")
+        drink = input("Su bebida: ").upper()
+
+        print(f"I de comer tenemos\n{", ".join(menu_food.keys())}")
+        food = input("Su comida: ").upper()
+
+        total = menu_drink[drink] + menu_food[food]
+
+        print("---Total---")
+        print(f"Su bebida es: {drink} i el precio es: {menu_drink[drink]}$\nSu comida es {food} i el precio es: {menu_food[food]}$\nI el total le sale a: {total}")
+elif selection_user == "S":
+    print("Ha salido del restaurante...")
+    exit()
+
+else:
+    print("Ha salido del restaurante por no poner las teclas indicadas," \
+    " para volver a entrar en el restaurante reinicie el programa")
